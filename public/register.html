@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+			integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+			crossorigin="anonymous"
+			<script type="text/javascript" src="./public/register.js"></script>
+		/>
+		<link rel="stylesheet" href="css/style.css" />
+		<title>TrishiaChat</title>
+	</head>
+	<body>
+		<div class="join-container">
+			<header class="join-header">
+				<h1><i class="fas fa-smile"></i> TrishiaChat</h1>
+			</header>
+			<main class="join-main">
+				<form action="https://dmserver.herokuapp.com/signup/" name="register.html" method="POST">
+					<div class="form-control">
+						<label for="fname">First Name</label>
+						<input
+							type="text"
+							name="Fname"
+							id="Fname"
+							placeholder="First Name"
+							required
+						/>
+
+						<label for="Lname">Last Name</label>
+						<input
+							type="text"
+							name="Lname"
+							id="Lname"
+							placeholder="Last Name"
+							required
+						/>
+
+						<label for="email">E-mail</label>
+						<input
+							type="email"
+							name="email"
+							id="email"
+							placeholder="E-mail"
+							required
+							style="padding: 5px;
+									height: 40px;
+									width: 100%;"
+						/>
+
+						<label for="age">Age</label>
+						<input
+							type="text"
+							name="age"
+							id="age"
+							placeholder="Age"
+							required
+						/>
+
+						<label for="age">Password</label>
+						<input
+							type="password"
+							name="password"
+							id="password"
+							placeholder="Password"
+							required
+							style="font-size: 16px;
+									padding: 5px;
+									height: 40px;
+									width: 100%;"
+						/>
+					</div>
+					
+					<button type="submit" onClick="register.js" form="register.html">Register</button>			
+				</form>
+			</main>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,13 @@
+var url = new URL(location.pathname, location.origin);
+    Object.entries({a:1,b:"🍻",c:'"stuff&things"'}).forEach(url.searchParams.set, url.searchParams);
+    url.search;
+    "?a=1&b=%F0%9F%8D%BB&c=%22stuff%26things%22"
+
+fetch(url.pathname, {
+    method: 'POST',
+    headers: new Headers({
+        "Content-type": "application/x-www-form-urlencoded"
+    }),
+    // same format as GET url search params a&b&c
+    body: url.searchParams
+}).then((res)=>{ console.log(res); return res }).catch((res)=>{ console.warn(res); return res; });
